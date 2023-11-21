@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".EmployeeRegistration">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <!--full name -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edtbackground"
+            android:textAllCaps="true"
+            android:layout_below="@+id/name_txt"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <!--phone -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/phone_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edtbackground"
+            android:textAllCaps="true"
+            android:layout_below="@+id/phone_txt"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <!--ID -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/id_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID No"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edtbackground"
+            android:textAllCaps="true"
+            android:layout_below="@+id/id_txt"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <!--DOB -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/dob_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edt_dob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edtbackground"
+            android:textAllCaps="true"
+            android:layout_below="@+id/dob_txt"
+            android:drawableRight="@drawable/calendar"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:text="SAVE DETAILS"
+        android:textSize="20sp" />
+
+</RelativeLayout>
